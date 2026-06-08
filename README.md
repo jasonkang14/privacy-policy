@@ -1,10 +1,12 @@
 # kangsium-pages
 
 Static GitHub Pages site hosting privacy policies + terms of service for every
-Kangsium mobile game. Served at **https://policy.kangsium.com/**.
+Kangsium app — the Flutter/Play games (English) **and** the Apps in Toss web
+mini-apps (Korean). Served at **https://policy.kangsium.com/**
+(remote: `github.com/jasonkang14/privacy-policy`).
 
 Plain HTML, no build step. Jekyll is disabled (`.nojekyll`) so files are served
-exactly as written.
+exactly as written. Toss-app pages use `lang="ko"` and Korean headings.
 
 ## Layout
 
@@ -28,9 +30,8 @@ in-app WebView follows fine.)
 
 ## One-time GitHub setup
 
-1. Create a GitHub repo (any name, e.g. `kangsium-pages`) and push this folder:
+1. The repo is already wired to `github.com/jasonkang14/privacy-policy` — just push:
    ```bash
-   git remote add origin git@github.com:<account>/kangsium-pages.git
    git push -u origin main
    ```
 2. Repo **Settings → Pages**: Source = *Deploy from a branch*, Branch = `main` / `/ (root)`.
